@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/gmbz/gmbz",
+    "pages/yyxz/yyxz",
+    "pages/yyzd/yyzd",
+    "pages/ypxq/ypxq",
+    "pages/member/member"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "感冒小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

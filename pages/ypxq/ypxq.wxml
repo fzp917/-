@@ -1,0 +1,156 @@
+<view class="cu-list menu-avatar">
+    <view wx:if="{{name === 'gmqrkl'}}">
+      <view wx:for="{{elements}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'txlfw'}}">
+      <view wx:for="{{elements1}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'zchykl'}}">
+      <view wx:for="{{elements2}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'gmrjn'}}">
+      <view wx:for="{{elements3}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'csxfw'}}">
+      <view wx:for="{{elements4}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'sjgmp'}}">
+      <view wx:for="{{elements5}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'yqjdw'}}">
+      <view wx:for="{{elements6}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'lqjdw'}}">
+      <view wx:for="{{elements7}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'blgkl'}}">
+      <view wx:for="{{elements8}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'wcyqp'}}">
+      <view wx:for="{{elements9}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'hqzqrjn'}}">
+      <view wx:for="{{elements10}}">
+        <view class="cu-avatar lg1">
+          <image class='icon' src="{{item.image}}"></image>
+          <image wx:if="{{item.image1}}" class='icon' src="{{item.image1}}"></image>
+          <image wx:if="{{item.image2}}" class='icon' src="{{item.image2}}"></image>
+        </view>
+        <view class="content">
+          <view class="text-grey content-list">主要成分:{{item.zycf}}</view>
+          <view class="text-grey content-list">规格:{{item.gg}}</view>
+          <view class="text-grey content-list">用法:{{item.yf}}</view>
+        </view>
+      </view>
+    </view>
+  </view>

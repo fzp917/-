@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "感冒小助手",
+  "usingComponents": {
+    "basics": "/pages/gmbz/gmbz/",
+    "component": "/pages/yyxz/yyxz",
+    "plugin": "/pages/member/member"
+  }
+}

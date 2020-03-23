@@ -1,0 +1,257 @@
+<scroll-view scroll-y class="scrollPage">
+  <view style="margin-bottom: 55px;">
+    <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text>症状表现(非必填)
+    </view>
+  </view>
+  <radio-group class="block">
+		<view class="cu-form-group">
+			<view class="title">(一)咳痰或流涕</view>
+			<view>
+				<radio bindtap="bindView1" data-radio1="1" class="blue radio"></radio>是
+				<radio bindtap="bindView1" data-radio1="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio1 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(1)咳痰颜色</view>
+			<view>
+				<radio bindtap="bindView2" data-radio2="1" class="blue radio"></radio>清
+				<radio bindtap="bindView2" data-radio2="0" class="blue radio radio1"></radio>黄
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio1 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(2)咳痰质地</view>
+			<view>
+				<radio bindtap="bindView3" data-radio3="1" class="blue radio"></radio>稀
+				<radio bindtap="bindView3" data-radio3="0" class="blue radio radio1"></radio>浓
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio1 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(1)鼻塞</view>
+			<view>
+				<radio bindtap="bindView4" data-radio4="1" class="blue radio"></radio>是
+				<radio bindtap="bindView4" data-radio4="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio1 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(2)鼻痒喷嚏</view>
+			<view>
+				<radio bindtap="bindView5" data-radio5="1" class="blue radio"></radio>是
+				<radio bindtap="bindView5" data-radio5="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '1' && radio3 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(3)明显怕冷</view>
+			<view>
+				<radio bindtap="bindView9" data-radio9="1" class="blue radio"></radio>是
+				<radio bindtap="bindView9" data-radio9="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '1' && radio3 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(4)低热</view>
+			<view>
+				<radio bindtap="bindView10" data-radio10="1" class="blue radio"></radio>是
+				<radio bindtap="bindView10" data-radio10="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '1' && radio3 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(5)无汗</view>
+			<view>
+				<radio bindtap="bindView11" data-radio11="1" class="blue radio"></radio>是
+				<radio bindtap="bindView11" data-radio11="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '1' && radio3 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(6)口渴</view>
+			<view>
+				<radio bindtap="bindView12" data-radio12="1" class="blue radio"></radio>是
+				<radio bindtap="bindView12" data-radio12="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '1' && radio3 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(7)喜热饮</view>
+			<view>
+				<radio bindtap="bindView13" data-radio13="1" class="blue radio"></radio>是
+				<radio bindtap="bindView13" data-radio13="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(3)高热</view>
+			<view>
+				<radio bindtap="bindView14" data-radio14="1" class="blue radio"></radio>是
+				<radio bindtap="bindView14" data-radio14="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(4)遇风觉冷，避风则缓</view>
+			<view>
+				<radio bindtap="bindView15" data-radio15="1" class="blue radio"></radio>是
+				<radio bindtap="bindView15" data-radio15="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(5)大汗</view>
+			<view>
+				<radio bindtap="bindView16" data-radio16="1" class="blue radio"></radio>是
+				<radio bindtap="bindView16" data-radio16="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(6)面红</view>
+			<view>
+				<radio bindtap="bindView17" data-radio17="1" class="blue radio"></radio>是
+				<radio bindtap="bindView17" data-radio17="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(7)咽红红肿疼痛</view>
+			<view>
+				<radio bindtap="bindView18" data-radio18="1" class="blue radio"></radio>是
+				<radio bindtap="bindView18" data-radio18="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(8)舌尖变红</view>
+			<view>
+				<radio bindtap="bindView19" data-radio19="1" class="blue radio"></radio>是
+				<radio bindtap="bindView19" data-radio19="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio2 === '0' && radio3 === '0'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(9)口干欲饮</view>
+			<view>
+				<radio bindtap="bindView20" data-radio20="1" class="blue radio"></radio>是
+				<radio bindtap="bindView20" data-radio20="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio9 === '1' && radio10 === '1' || radio9 === '1' && radio11 === '1' || radio9 === '1' && radio12 === '1' || radio9 === '1' && radio13 === '1' || radio10 === '1' && radio11 === '1' || radio10 === '1' && radio12 === '1' || radio10 === '1' && radio13 === '1' || radio11 === '1' && radio12 === '1' || radio11 === '1' && radio13 === '1' || radio12 === '1' && radio13 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(8)咳痰无力</view>
+			<view>
+				<radio bindtap="bindView21" data-radio21="1" class="blue radio"></radio>是
+				<radio bindtap="bindView21" data-radio21="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio9 === '1' && radio10 === '1' || radio9 === '1' && radio11 === '1' || radio9 === '1' && radio12 === '1' || radio9 === '1' && radio13 === '1' || radio10 === '1' && radio11 === '1' || radio10 === '1' && radio12 === '1' || radio10 === '1' && radio13 === '1' || radio11 === '1' && radio12 === '1' || radio11 === '1' && radio13 === '1' || radio12 === '1' && radio13 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(9)神疲体弱</view>
+			<view>
+				<radio bindtap="bindView22" data-radio22="1" class="blue radio"></radio>是
+				<radio bindtap="bindView22" data-radio22="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio9 === '1' && radio10 === '1' || radio9 === '1' && radio11 === '1' || radio9 === '1' && radio12 === '1' || radio9 === '1' && radio13 === '1' || radio10 === '1' && radio11 === '1' || radio10 === '1' && radio12 === '1' || radio10 === '1' && radio13 === '1' || radio11 === '1' && radio12 === '1' || radio11 === '1' && radio13 === '1' || radio12 === '1' && radio13 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(10)气短懒言</view>
+			<view>
+				<radio bindtap="bindView23" data-radio23="1" class="blue radio"></radio>是
+				<radio bindtap="bindView23" data-radio23="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio9 === '1' && radio10 === '1' || radio9 === '1' && radio11 === '1' || radio9 === '1' && radio12 === '1' || radio9 === '1' && radio13 === '1' || radio10 === '1' && radio11 === '1' || radio10 === '1' && radio12 === '1' || radio10 === '1' && radio13 === '1' || radio11 === '1' && radio12 === '1' || radio11 === '1' && radio13 === '1' || radio12 === '1' && radio13 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(11)反复易感</view>
+			<view>
+				<radio bindtap="bindView24" data-radio24="1" class="blue radio"></radio>是
+				<radio bindtap="bindView24" data-radio24="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(10)当前季节为夏季</view>
+			<view>
+				<radio bindtap="bindView25" data-radio25="1" class="blue radio"></radio>是
+				<radio bindtap="bindView25" data-radio25="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(11)肢体酸重</view>
+			<view>
+				<radio bindtap="bindView26" data-radio26="1" class="blue radio"></radio>是
+				<radio bindtap="bindView26" data-radio26="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(12)口干粘腻</view>
+			<view>
+				<radio bindtap="bindView27" data-radio27="1" class="blue radio"></radio>是
+				<radio bindtap="bindView27" data-radio27="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(13)恶心</view>
+			<view>
+				<radio bindtap="bindView28" data-radio28="1" class="blue radio"></radio>是
+				<radio bindtap="bindView28" data-radio28="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(14)舌苔黄</view>
+			<view>
+				<radio bindtap="bindView29" data-radio29="1" class="blue radio"></radio>是
+				<radio bindtap="bindView29" data-radio29="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <radio-group wx:if="{{radio14 === '1' && radio15 === '1' || radio14 === '1' && radio16 === '1' || radio14 === '1' && radio17 === '1' || radio14 === '1' && radio18 === '1' || radio14 === '1' && radio19 === '1' || radio14 === '1' && radio20 === '1' || radio15 === '1' && radio16 === '1' || radio15 === '1' && radio17 === '1' || radio15 === '1' && radio18 === '1' || radio15 === '1' && radio19 === '1' || radio15 === '1' && radio20 === '1' || radio16 === '1' && radio17 === '1' || radio16 === '1' && radio18 === '1' || radio16 === '1' && radio19 === '1' ||radio16 === '1' && radio20 === '1' || radio17 === '1' && radio18 === '1' || radio17 === '1' && radio19 === '1' || radio17 === '1' && radio20 === '1' || radio18 === '1' && radio19 === '1' || radio18 === '1' && radio20 === '1' || radio19 === '1' && radio20 === '1'}}" class="block">
+    <view class="cu-form-group">
+			<view class="title">(15)大便稀溏</view>
+			<view>
+				<radio bindtap="bindView30" data-radio30="1" class="blue radio"></radio>是
+				<radio bindtap="bindView30" data-radio30="0" class="blue radio radio1"></radio>否
+			</view>
+		</view>
+	</radio-group>
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="padding1 flex flex-direction" style="width: 100%">
+      <button bindtap="bindViewbutton" class="cu-btn bg-red margin-tb-sm lg">提交</button>
+    </view>
+  </view>
+  </view>
+</scroll-view>

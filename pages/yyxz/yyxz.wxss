@@ -1,0 +1,19 @@
+.nav-li{
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+  height: 80rpx;
+}
+.nav-name{
+  border-left: 1px solid #000;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-title{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

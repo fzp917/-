@@ -1,0 +1,44 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <button bindtap="showModal" data-target="Modal" class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">注意事项</text>
+      </button>
+    </view>
+    <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">注意事项</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <view>①心脏病、高血压、糖尿病、肝病、肾病等慢性病严重者,儿童、年老、身体体弱者、孕妇或者正在接受其他治疗的患者,不宜自行买药用药，均应在医师指导下购买和服用。</view>
+      <view>②服药三天后，症状没有明显改善,甚至出现严重呕吐和腹泻,皮疹等严重症状时应去当地医院就诊。</view>
+      <view>③应在药品的指导下合理用药，切勿大剂量服用。</view>
+      <view>④服用药物期间不宜服用其他滋养补益性中成药。</view>
+      <view>⑤忌烟，忌酒，不吃生冷、油腻食物。</view>
+      <view>⑥患者不可同时服用多种药物。</view>
+      <view>⑦请将药品放在儿童不能接触的地方。</view>
+      <view>⑧药品放置24个月后，不宜使用。</view>
+      <view>⑨药品应密封，避光。</view>
+    </view>
+  </view>
+</view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">联系我们</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

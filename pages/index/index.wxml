@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view wx:if="{{PageCur !=='basics' && PageCur !=='component' && PageCur !=='plugin'}}">
+    <image class='icon1' src="../../static/page16.png"></image>
+    <image class='icon1' src="../../static/page15.png"></image>
+</view>
+<basics wx:if="{{PageCur=='basics'}}"></basics>
+<component wx:if="{{PageCur=='component'}}"></component>
+<plugin wx:if="{{PageCur=='plugin'}}"></plugin>
+  <view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="basics">
+    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">感冒辩证</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="component" data-a="hahha">
+    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">用药选择</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="plugin">
+    <view class="{{PageCur=='plugin'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

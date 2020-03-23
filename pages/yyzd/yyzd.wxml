@@ -1,0 +1,49 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class='nav-list'>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action">
+        <text class="cuIcon-title text-orange "></text>{{title}}用药指导：
+      </view>
+    </view>
+    <view wx:if="{{name === 'fhgm'}}">
+      <view hover-class='none' class="nav-li" wx:for="{{elements}}" wx:key>
+        <view class="nav-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="nav-name">
+          <text bindtap="bindViewItem" data-item="{{item}}">查看</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'frgm'}}">
+      <view hover-class='none' class="nav-li" wx:for="{{elements2}}" wx:key>
+        <view class="nav-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="nav-name">
+          <text bindtap="bindViewItem" data-item="{{item}}">查看</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'ssgm'}}">
+      <view hover-class='none' class="nav-li" wx:for="{{elements3}}" wx:key>
+        <view class="nav-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="nav-name">
+          <text bindtap="bindViewItem" data-item="{{item}}">查看</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{name === 'qxgm'}}">
+      <view hover-class='none' class="nav-li" wx:for="{{elements1}}" wx:key>
+        <view class="nav-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="nav-name">
+          <text bindtap="bindViewItem" data-item="{{item}}">查看</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

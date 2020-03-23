@@ -1,0 +1,8 @@
+.padding1{
+  padding-left:30rpx;
+  padding-right:30rpx;
+}
+.radio1{
+  margin-left: 30rpx;
+
+}
